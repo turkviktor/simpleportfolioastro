@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>turkviktor</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		font-family: "TexGyreHeros-Bold", sans-serif;
+		background-color: black;
+	}
+	@font-face {
+		font-family: "TexGyreHeros";
+		src: url("/fonts/texgyreheros.otf");
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: "TexGyreHeros-Bold";
+		src: url("/fonts/texgyreheros-bold.otf");
+		font-weight: bold;
+		font-style: normal;
+		font-display: swap;
+	}
+</style>
