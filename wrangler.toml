@@ -1,4 +1,4 @@
-name = "beenswaggin"
+name = "simpleportfolio"
 compatibility_date = "2025-01-01"
 [assets]
 directory = "./assets"
