@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <title>T.V. STUDIO.</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #name {
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-size: 200px;
+            font-family: "TexGyreHeros-Bold", sans-serif;
+        }
+
+        #dot {
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-size: 200px;
+            font-family: "TexGyreHeros-Bold", sans-serif;
+            aspect-ratio: 4;
+            clip-path: inset(0 100% 0 0);
+            animation: l1 2s steps(3) infinite;
+        }
+
+        @keyframes l1 {
+            to {
+                clip-path: inset(0 -34% 0 0)
+            }
+        }
+
+        @font-face {
+            font-family: "TexGyreHeros";
+            src: url("./assets/fonts/texgyreheros.otf");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "TexGyreHeros-Bold";
+            src: url("./assets/fonts/texgyreheros-bold.otf");
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <p id="name">T.V.<br>STUDIO.
+                <span id="dot">. .</span>
+        </p>
+
+    </div>
+</body>
+
+</html>
