@@ -5,8 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>T.V. STUDIO.</title>
+    <title>TV/02</title>
     <style>
+        html, body {
+            height: 100vh;
+            overflow: hidden;
+        }
+
         #container {
             display: flex;
             justify-content: center;
@@ -22,23 +27,6 @@
             user-select: none;
             font-size: 200px;
             font-family: "TexGyreHeros-Bold", sans-serif;
-        }
-
-        #dot {
-            -webkit-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            font-size: 200px;
-            font-family: "TexGyreHeros-Bold", sans-serif;
-            aspect-ratio: 4;
-            clip-path: inset(0 100% 0 0);
-            animation: l1 2s steps(3) infinite;
-        }
-
-        @keyframes l1 {
-            to {
-                clip-path: inset(0 -34% 0 0)
-            }
         }
 
         @font-face {
@@ -66,25 +54,12 @@
                 font-size: 120px;
             }
         }
-
-        @media screen and (max-width: 699px) {
-            #name {
-                font-size: 55px;
-            }
-            
-            #dot {
-                font-size: 55px;
-            }
-        }
     </style>
 </head>
 
 <body>
     <div id="container">
-        <p id="name">T.V.<br>STUDIO.
-            <span id="dot">. .</span>
-        </p>
-
+        <p id="name">TV/02</p>
     </div>
 </body>
 
